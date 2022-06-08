@@ -1,6 +1,7 @@
 var http = require('http');
+var express = require('express');
+var app = express();
 var app = require('./config/express')();
-require('./config/passport')();
 const url = 'mongodb+srv://dswa5:dswa5@clusterdswa5.xmkyt.mongodb.net/?retryWrites=true&w=majority';
 const localUrl = 'mongodb://localhost/DSWA'
 require('./config/database.js')(url);
